@@ -1,3 +1,7 @@
+/*****************************************************************************
+ Basic Setting initializing the page
+ ****************************************************************************/
+
 body, html {
   margin: 0;
   padding: 0;
@@ -15,13 +19,16 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+ /****************************************************************************
+  Setting up a CSS grid layout
+  ***************************************************************************/
+
 .container {
   margin-left: 5%;
   margin-right: 5%;
   height: 100%;
   max-width: 1170px;
   display: grid;
-  /* grid-template-columns: 25% 25% 25% 25%; */
   grid-template-columns: 19% 27% 27% 27%;
   grid-template-rows: 100px 1fr 1fr;
   grid-template-areas:
@@ -35,7 +42,7 @@ header {
   padding-top: 8px;
   border-style: solid;
   border-width: 0px 0px 2px 0px;
-  background-color: lightyellow;
+  /* background-color: lightyellow; */
 }
 
 .aside {
@@ -60,6 +67,8 @@ header {
   /* background-color: grey; */
 }
 
+/* Details: the header part */
+
 .logo {
   background-image: url("../img/U_360x360px.jpg");
   background-size: contain;
@@ -73,6 +82,8 @@ header {
   text-transform: uppercase;
   color: #2d3c40;
 }
+
+/* The part aside */
 
 .color_ref {
   color: ddd;
@@ -123,6 +134,8 @@ header {
   padding-top: 100%;
 }
 
+/* The feature part */
+
 .feature h2 {
   margin-top: 2em;
   margin-bottom: 1em;
@@ -153,4 +166,8 @@ header {
 
 .feature img {
   width: 100%;
+}
+
+.feature img:hover {
+  content: "foo";
 }
