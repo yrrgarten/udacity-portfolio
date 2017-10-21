@@ -1,0 +1,100 @@
+/*****************************************************************************
+ Breakpoints and responsiveness improvements
+ ****************************************************************************/
+
+@media screen and (min-width:1300px) {
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .feature_container h3 {
+    font-size: 1.8vw;
+  }
+
+  .feature_container a {
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width:699px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "teaser teaser teaser"
+        "feature feature feature"
+        "aside aside aside";
+  }
+
+  .feature {
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+  }
+
+  .aside {
+    width: 95%;
+    padding-top: 15px;
+  }
+
+  /* The part aside */
+
+  .color_ref {
+    color: ddd;
+    font-size: 120%;
+    text-align: center;
+    display: inline-block;
+    width: 32%;
+  }
+
+  /* We want the height equal the width for the in box in pure css. I needed
+     to Google a bit and found a neat solution:
+     http://www.mademyday.de/css-height-equals-width-with-pure-css.html */
+
+  .color_1 {
+    background-color: #02b3e4;
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    left: 0%;
+  }
+
+  .color_1::before, color_2::before, color_3::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  .color_2 {
+    background-color: #2d3c49;
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    left: 0%;
+  }
+/*
+  .color_2:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  } */
+
+  .color_3 {
+    background-color: #7d97ad;
+    position: relative;
+      display: inline-block;
+    width: 50%;
+    left: 0%;
+  }
+/*
+  .color_3:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  } */
+}

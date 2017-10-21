@@ -27,7 +27,6 @@ h1, h2, h3, h4, h5 {
   margin-left: 5%;
   margin-right: 5%;
   height: 100%;
-  max-width: 1170px;
   display: grid;
   grid-template-columns: 19% 27% 27% 27%;
   grid-template-rows: 120px 1fr 1fr;
@@ -114,7 +113,7 @@ header {
   left: 30%;
 }
 
-.color_1:before {
+.color_1::before, .color_2::before, .color_3::before {
   content: "";
   display: block;
   padding-top: 100%;
@@ -126,12 +125,12 @@ header {
   width: 40%;
   left: 30%;
 }
-
+/*
 .color_2:before {
   content: "";
   display: block;
   padding-top: 100%;
-}
+} */
 
 .color_3 {
   background-color: #7d97ad;
@@ -139,12 +138,12 @@ header {
   width: 40%;
   left: 30%;
 }
-
+/*
 .color_3:before {
   content: "";
   display: block;
   padding-top: 100%;
-}
+} */
 
 /* The feature part */
 
