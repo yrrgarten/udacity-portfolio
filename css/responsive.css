@@ -98,3 +98,29 @@
     padding-top: 100%;
   } */
 }
+
+@media screen and (max-width:479px) {
+  .feature_container {
+    display: block;
+  }
+
+  .teaser {
+    height: 25vh;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .feature_1, .feature_2, .feature_3 {
+    margin-bottom: 15px;
+  }
+
+  .feature_container h3 {
+    font-size: 2em;
+  }
+
+  .feature_container a {
+    font-size: 1em;
+  }
+}
