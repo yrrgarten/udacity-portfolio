@@ -77,12 +77,6 @@
     width: 50%;
     left: 0%;
   }
-/*
-  .color_2:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-  } */
 
   .color_3 {
     background-color: #7d97ad;
@@ -91,12 +85,6 @@
     width: 50%;
     left: 0%;
   }
-/*
-  .color_3:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-  } */
 }
 
 @media screen and (max-width:479px) {
