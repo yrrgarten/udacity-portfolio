@@ -24,8 +24,7 @@ h1, h2, h3, h4, h5 {
   ***************************************************************************/
 
 .container {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 0 5% 0 5%;
   height: 100%;
   display: grid;
   grid-template-columns: 19% 27% 27% 27%;
@@ -105,7 +104,7 @@ header {
 
 .teaser_hover a {
   text-decoration: none;
-  color: #111111;
+  color: #111;
 }
 
 .teaser:hover .teaser_hover {
@@ -115,7 +114,7 @@ header {
 /* The part aside */
 
 .color_ref {
-  color: ddd;
+  color: #7d97ad;
   font-size: 120%;
   text-align: center;
 }
@@ -154,9 +153,7 @@ header {
 /* The feature part */
 
 .feature h2 {
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  margin-left: 0.25em;
+  margin: 1em 0 0.5em 0.25em;
   font-size: 2.25em;
   font-weight: 300;
 }
@@ -224,6 +221,6 @@ header {
 }
 
 .unsplash_text a {
-  color: #111111;
+  color: #111;
   font-size: 1em;
 }
