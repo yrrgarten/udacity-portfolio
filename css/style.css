@@ -90,6 +90,28 @@ header {
   margin-top: 0.3em;
 }
 
+/* The teaser part */
+
+.teaser_hover {
+  background: #eee;
+  opacity: 0.5;
+  position: relative;
+  height: 25%;
+  top: 72.5%;
+  display: none;
+  text-align: center;
+  padding-top: 2.5%;
+}
+
+.teaser_hover a {
+  text-decoration: none;
+  color: #111111;
+}
+
+.teaser:hover .teaser_hover {
+  display: block;
+}
+
 /* The part aside */
 
 .color_ref {
@@ -164,6 +186,7 @@ header {
 
 .feature_1 {
   grid-area: feature_1;
+  position: relative;
 }
 
 .feature_2 {
@@ -178,6 +201,29 @@ header {
   width: 100%;
 }
 
-.feature img:hover {
-  content: "foo";
+.unsplash_hover:hover .unsplash_text {
+  height: 35%;
+  display: block;
+}
+
+.unsplash_hover {
+  position: relative;
+}
+
+.unsplash_text {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  background-color: #eee;
+  opacity: 0.8;
+  padding-top: 2.5%;
+  display: none;
+}
+
+.unsplash_text a {
+  color: #111111;
+  font-size: 1em;
 }
